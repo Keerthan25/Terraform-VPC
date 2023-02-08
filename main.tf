@@ -15,7 +15,7 @@ module "module-vpc" {
     PubSub-cidr-block = "10.0.1.0/24"
     public_instance_name = "Public-Instance"
     private_instance_name = "Private-Instance" 
-    key_pair = "ver"
+    key_pair = "test"
     ami = "ami-0ab0629dba5ae551d"
     instance-type = "t2.micro"
 }
