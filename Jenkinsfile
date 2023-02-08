@@ -11,7 +11,7 @@ agent {
         stage ('terraform init') {
             steps {
 
-              sh '''terraform init -reconfigure'''
+              sh '''terraform init -force-copy'''
             }
         }
         stage ('terraform apply') {
