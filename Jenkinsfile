@@ -11,12 +11,12 @@ agent {
         stage ('terraform init') {
             steps {
 
-              sh '''terraform init -force-copy'''
+              sh '''terraform init -reconfigure'''
             }
         }
         stage ('terraform apply') {
             steps {
-                sh 'terraform destroy '
+                sh 'terraform apply --auto-approve '
             }
         }
     }
