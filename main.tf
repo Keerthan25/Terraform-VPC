@@ -4,6 +4,8 @@ provider "aws" {
 
 resource "aws_s3_bucket" "backend-s3" {
   bucket = "bucket-s3-backend" 
+  force_destroy = "true"
+  
 }
 resource "aws_s3_bucket_versioning" "backend-s3-version" {
   bucket = aws_s3_bucket.backend-s3.id
