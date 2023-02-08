@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "backend-s3" {
-  bucket = "bucket-S3-backend" 
+  bucket = "newbucket-s3-backend" 
   force_destroy = "true"
   
 }
