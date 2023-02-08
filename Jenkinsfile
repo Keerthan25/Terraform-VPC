@@ -11,7 +11,7 @@ agent {
         stage ('terraform init') {
             steps {
 
-              sh '''terraform init -input=false'''
+              sh '''terraform init -yes'''
             }
         }
         stage ('terraform apply') {
