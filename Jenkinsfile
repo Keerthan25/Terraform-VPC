@@ -8,10 +8,10 @@ agent {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Keerthan25/Terraform-VPC.git']])
             }
         }
-        stage ('terraform init -backend-config="newbucket-s3-backend"') {
+        stage ('terraform init') {
             steps {
 
-              sh '''terraform init'''
+              sh '''terraform init -input=false'''
             }
         }
         stage ('terraform apply') {
