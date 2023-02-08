@@ -8,7 +8,7 @@ agent {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Keerthan25/Terraform-VPC.git']])
             }
         }
-        stage ('terraform init') {
+        stage ('terraform init --auto-approve') {
             steps {
 
               sh '''terraform init'''
