@@ -11,7 +11,7 @@ agent {
         stage ('terraform init') {
             steps {
 
-              sh '''terraform init -migrate-state'''
+              sh '''terraform init'''
             }
         }
         stage ('terraform apply') {
