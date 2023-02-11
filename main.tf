@@ -16,6 +16,6 @@ module "module-vpc" {
     public_instance_name = "Public-Instance"
     private_instance_name = "Private-Instance" 
     key_pair = "test"
-    ami = "ami-0ab0629dba5ae551d"
-    instance-type = "t2.micro"
+    ami = "ami-00eeedc4036573771"
+    instance-type = "t2.nano"
 }
