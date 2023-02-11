@@ -5,7 +5,7 @@ agent {
     stages{
         stage ('Git Checkout') {
             steps{
-                checkout scmGit(branches: [[name: '*/S3']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Keerthan25/Terraform-VPC.git']])
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Keerthan25/Terraform-VPC.git']])
             }
         }
         stage ('terraform init') {
