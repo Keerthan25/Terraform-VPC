@@ -1,6 +1,6 @@
 terraform {
  backend "s3"{
-       bucket = "newbucket-s3-backend"
+       bucket = "verybucket-s3-backend"
        region = "us-east-2"
        key = "terraform/remotestate/terraform.tfstate"
 
